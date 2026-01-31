@@ -1,0 +1,4 @@
+def reverse(x):
+    if x < 0:
+        return -int(str(-x)[::-1]) if -x <= 2**31 else 0
+    return int(str(x)[::-1]) if x <= 2**31 - 1 else 0
